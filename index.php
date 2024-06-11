@@ -57,16 +57,17 @@
 
     <section class="mt-3 container">
         <div class="flex row">
-            <div class="card w-25">
                 <?php
                     foreach($hotels as $hotel) {
-                        echo "<h2>". $hotel["name"] . "</h2>";
-                        echo "<p>". $hotel["description"] . " Ha il parcheggio?  "  . $hotel["parking"] . " " . "</p>";
-                        echo "<p>". "Stelle Hotel: " . $hotel["vote"] . "</p>";
-                        echo  "<p>". " Distanza dal centro: " . $hotel['distance_to_center'] . "</p>";
+                        echo "<ul>";
+                        echo "<li>". $hotel["name"] . "</li>";
+                        echo "<li>". $hotel["description"] . " Ha il parcheggio?  "  . $hotel["parking"] . " " . "</li>";
+                        echo "<li>". "Stelle Hotel: " . $hotel["vote"] . "</li>";
+                        echo  "<li>". " Distanza dal centro: " . $hotel['distance_to_center'] . "</li>";
+                        echo "</ul>";
                     }
                 ?>
-            </div>
+            
         </div>
     </section>
 </body>
